@@ -11,6 +11,17 @@
   "rangeStrategy": "update-lockfile",
   "packageRules": [
     {
+      "matchDepTypes": [
+        "devDependencies",
+        "require-dev"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "automerge": true
+    },
+    {
       "packagePatterns": ["^typo3/cms-*"],
       "groupName": "TYPO3"
     }
