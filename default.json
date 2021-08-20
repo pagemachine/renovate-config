@@ -6,5 +6,6 @@
   ],
   "commitMessagePrefix": "[TASK] ",
   "commitMessageTopic": "{{depName}}",
-  "commitMessageExtra": " ({{{displayFrom}}} => {{{displayTo}}})"
+  "commitMessageExtra": " ({{{displayFrom}}} => {{{displayTo}}})",
+  "rangeStrategy": "update-lockfile"
 }
