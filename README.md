@@ -57,4 +57,4 @@ This rule enables automerge for all kind of development dependencies, namely for
 
 This rule groups all TYPO3 packages into a single update. Technically all TYPO3 packages must be updated at once since all depend on each other with the same version.
 
-Finall see the Renovate docs about [Configuration Options](https://docs.renovatebot.com/configuration-options/) and [Default Presets](https://docs.renovatebot.com/presets-default/) for all features and tweaks.
+Finally see the Renovate docs about [Configuration Options](https://docs.renovatebot.com/configuration-options/) and [Default Presets](https://docs.renovatebot.com/presets-default/) for all features and tweaks.
