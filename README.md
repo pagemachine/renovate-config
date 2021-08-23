@@ -23,8 +23,11 @@
 The various parts explained:
 
 - [`config:base`](https://docs.renovatebot.com/presets-config/#configbase) is the default base configuration for all languages.
-- [`:separatePatchReleases`](https://docs.renovatebot.com/presets-default/#separatepatchreleases) separates minor (x.Y.z) and patch (x.y.Z) updates. Patch updates are usually safe to apply right away. Minor updates usually provide new features and should be reviewed more thoroughly.
-- [`commitMessagePrefix`](https://docs.renovatebot.com/configuration-options/#commitmessageprefix), [`commitMessageTopic`](https://docs.renovatebot.com/configuration-options/#commitmessagetopic), [`commitMessageExtra`](https://docs.renovatebot.com/configuration-options/#commitmessageextra) slightly reformat the Renovate commit messages to `[TASK] Update <package> (<old-version> => <new-version>)`.
+- [`:separatePatchReleases`](https://docs.renovatebot.com/presets-default/#separatepatchreleases) separates minor (x.Y.z) and patch (x.y.Z) updates. Patch updates are usually safe to apply right away. Minor updates provide new features and should be reviewed more thoroughly.
+- [`commitMessagePrefix`](https://docs.renovatebot.com/configuration-options/#commitmessageprefix), [`commitMessageTopic`](https://docs.renovatebot.com/configuration-options/#commitmessagetopic), [`commitMessageExtra`](https://docs.renovatebot.com/configuration-options/#commitmessageextra) slightly reformat the Renovate commit messages:
+
+      [TASK] Update <package> (<old-version> => <new-version>)
+
 - [`gitLabAutomerge`](https://docs.renovatebot.com/configuration-options/#gitlabautomerge) enables automerge on GitLab using the [_Merge when pipeline succeeds_](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html) feature.
 - [`rangeStrategy`](https://docs.renovatebot.com/configuration-options/#rangestrategy) prefers lockfile updates (e.g. `composer.lock`), otherwise updates version constraints (e.g. `^1.0` to `^2.0`)
 - [`packageRules`](https://docs.renovatebot.com/configuration-options/#packagerules):
