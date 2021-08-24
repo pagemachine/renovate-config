@@ -12,6 +12,7 @@
   "commitMessagePrefix": "[TASK] ",
   "commitMessageTopic": "{{depName}}",
   "commitMessageExtra": " ({{{displayFrom}}} => {{{displayTo}}})",
+  "composerIgnorePlatformReqs": null,
   "gitLabAutomerge": true,
   "rangeStrategy": "update-lockfile",
   "packageRules": [
@@ -28,6 +29,7 @@ The various parts explained:
 
       [TASK] Update <package> (<old-version> => <new-version>)
 
+- [`composerIgnorePlatformReqs`](https://docs.renovatebot.com/configuration-options/#composerignoreplatformreqs) lets Composer respect platform requirements (e.g. PHP version)
 - [`gitLabAutomerge`](https://docs.renovatebot.com/configuration-options/#gitlabautomerge) enables automerge on GitLab using the [_Merge when pipeline succeeds_](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html) feature.
 - [`rangeStrategy`](https://docs.renovatebot.com/configuration-options/#rangestrategy) prefers lockfile updates (e.g. `composer.lock`), otherwise updates version constraints (e.g. `^1.0` to `^2.0`)
 - [`packageRules`](https://docs.renovatebot.com/configuration-options/#packagerules):
