@@ -24,6 +24,7 @@
 The various parts explained:
 
 - [`config:base`](https://docs.renovatebot.com/presets-config/#configbase) is the default base configuration for all languages.
+- [`:disableDependencyDashboard`](https://docs.renovatebot.com/presets-default/#disabledependencydashboard) disables the Dependency Dashboard since it implicitly requires the GitLab _Issues_ feature to be enabled
 - [`:separatePatchReleases`](https://docs.renovatebot.com/presets-default/#separatepatchreleases) separates minor (x.Y.z) and patch (x.y.Z) updates. Patch updates are usually safe to apply right away. Minor updates provide new features and should be reviewed more thoroughly.
 - [`commitMessagePrefix`](https://docs.renovatebot.com/configuration-options/#commitmessageprefix), [`commitMessageTopic`](https://docs.renovatebot.com/configuration-options/#commitmessagetopic), [`commitMessageExtra`](https://docs.renovatebot.com/configuration-options/#commitmessageextra) slightly reformat the Renovate commit messages:
 
