@@ -25,7 +25,10 @@
     },
     {
       "packagePatterns": ["^typo3/cms-*"],
-      "groupName": "TYPO3"
+      "groupName": "TYPO3",
+      "extends": [
+        ":disableMajorUpdates"
+      ]
     }
   ]
 }
