@@ -9,7 +9,6 @@
   "commitMessageTopic": "{{depName}}",
   "commitMessageExtra": " ({{{displayFrom}}} => {{{displayTo}}})",
   "composerIgnorePlatformReqs": null,
-  "gitLabAutomerge": true,
   "rangeStrategy": "update-lockfile",
   "packageRules": [
     {
