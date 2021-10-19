@@ -52,7 +52,7 @@ This rule enables automerge for all kind of development dependencies, namely for
 ```json
     {
       "matchSourceUrlPrefixes": [
-        "https://github.com/TYPO3-CMS"
+        "https://github.com/TYPO3-CMS/"
       ],
       "groupName": "TYPO3 CMS",
       "extends": [
@@ -61,6 +61,6 @@ This rule enables automerge for all kind of development dependencies, namely for
     }
 ```
 
-This rule groups all TYPO3 packages into a single update. Technically all TYPO3 packages must be updated at once since all depend on each other with the same version. Also major TYPO3 updates (e.g. from v9 to v10) will not be suggested. These basically always need proper preparation and migration as well as other package updates.
+This rule groups [all TYPO3 packages](https://github.com/orgs/TYPO3-CMS/repositories) into a single update. Technically all TYPO3 packages must be updated at once since all depend on each other with the same version. Also major TYPO3 updates (e.g. from v9 to v10) will not be suggested. These basically always need proper preparation and migration as well as other package updates.
 
 Finally see the Renovate docs about [Configuration Options](https://docs.renovatebot.com/configuration-options/) and [Default Presets](https://docs.renovatebot.com/presets-default/) for all features and tweaks.
