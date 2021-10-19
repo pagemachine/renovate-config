@@ -51,8 +51,10 @@ This rule enables automerge for all kind of development dependencies, namely for
 
 ```json
     {
-      "packagePatterns": ["^typo3/cms-*"],
-      "groupName": "TYPO3",
+      "matchSourceUrlPrefixes": [
+        "https://github.com/TYPO3-CMS"
+      ],
+      "groupName": "TYPO3 CMS",
       "extends": [
         ":disableMajorUpdates"
       ]

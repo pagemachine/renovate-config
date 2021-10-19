@@ -23,8 +23,10 @@
       "automerge": true
     },
     {
-      "packagePatterns": ["^typo3/cms-*"],
-      "groupName": "TYPO3",
+      "matchSourceUrlPrefixes": [
+        "https://github.com/TYPO3-CMS"
+      ],
+      "groupName": "TYPO3 CMS",
       "extends": [
         ":disableMajorUpdates"
       ]
