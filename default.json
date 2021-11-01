@@ -23,8 +23,10 @@
       "automerge": true
     },
     {
+      "matchPackagePatterns": [
+        "^phpstan/"
+      ],
       "matchPackageNames": [
-        "phpstan/phpstan",
         "jangregor/phpstan-prophecy",
         "saschaegerer/phpstan-typo3"
       ],
