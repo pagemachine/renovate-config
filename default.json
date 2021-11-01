@@ -23,6 +23,14 @@
       "automerge": true
     },
     {
+      "matchPackageNames": [
+        "phpstan/phpstan",
+        "jangregor/phpstan-prophecy",
+        "saschaegerer/phpstan-typo3"
+      ],
+      "groupName": "PHPStan"
+    },
+    {
       "matchSourceUrlPrefixes": [
         "https://github.com/TYPO3-CMS/"
       ],

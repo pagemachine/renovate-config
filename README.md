@@ -51,6 +51,19 @@ This rule enables automerge for all kind of development dependencies, namely for
 
 ```json
     {
+      "matchPackageNames": [
+        "phpstan/phpstan",
+        "jangregor/phpstan-prophecy",
+        "saschaegerer/phpstan-typo3"
+      ],
+      "groupName": "PHPStan"
+    }
+```
+
+This rule groups all PHPStan-related packages into a single update. This avoids broken update PRs caused by major version bumps.
+
+```json
+    {
       "matchSourceUrlPrefixes": [
         "https://github.com/TYPO3-CMS/"
       ],
