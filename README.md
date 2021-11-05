@@ -13,6 +13,7 @@
   "commitMessageTopic": "{{depName}}",
   "commitMessageExtra": " ({{{displayFrom}}} => {{{displayTo}}})",
   "composerIgnorePlatformReqs": null,
+  "platformAutomerge": true,
   "rangeStrategy": "update-lockfile",
   "packageRules": [
     // See below
@@ -30,6 +31,7 @@ The various parts explained:
       [TASK] Update <package> (<old-version> => <new-version>)
 
 - [`composerIgnorePlatformReqs`](https://docs.renovatebot.com/configuration-options/#composerignoreplatformreqs) lets Composer respect platform requirements (e.g. PHP version)
+- [`platformAutomerge`](https://docs.renovatebot.com/configuration-options/#platformautomerge) enables the platform-native auto-merge capabilities so that update PRs can be merged automatically without interaction.
 - [`rangeStrategy`](https://docs.renovatebot.com/configuration-options/#rangestrategy) prefers lockfile updates (e.g. `composer.lock`), otherwise updates version constraints (e.g. `^1.0` to `^2.0`)
 - [`packageRules`](https://docs.renovatebot.com/configuration-options/#packagerules):
 
