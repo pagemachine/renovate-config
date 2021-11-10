@@ -29,7 +29,8 @@
       ],
       "matchPackageNames": [
         "jangregor/phpstan-prophecy",
-        "saschaegerer/phpstan-typo3"
+        "saschaegerer/phpstan-typo3",
+        "rector/rector"
       ],
       "groupName": "PHPStan"
     },

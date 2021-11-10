@@ -56,7 +56,8 @@ This rule enables automerge for all kind of development dependencies, namely for
       "matchPackageNames": [
         "phpstan/phpstan",
         "jangregor/phpstan-prophecy",
-        "saschaegerer/phpstan-typo3"
+        "saschaegerer/phpstan-typo3",
+        "rector/rector"
       ],
       "groupName": "PHPStan"
     }
