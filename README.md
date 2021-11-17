@@ -69,7 +69,7 @@ This rule groups all PHPStan-related packages into a single update. This avoids 
     {
       "matchSourceUrlPrefixes": [
         "https://github.com/TYPO3-CMS/",
-        "git@github.com:TYPO3GmbH"
+        "https://github.com/TYPO3GmbH/"
       ],
       "groupName": "TYPO3 CMS",
       "extends": [
