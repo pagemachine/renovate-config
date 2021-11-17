@@ -68,7 +68,8 @@ This rule groups all PHPStan-related packages into a single update. This avoids 
 ```json
     {
       "matchSourceUrlPrefixes": [
-        "https://github.com/TYPO3-CMS/"
+        "https://github.com/TYPO3-CMS/",
+        "git@github.com:TYPO3GmbH"
       ],
       "groupName": "TYPO3 CMS",
       "extends": [
