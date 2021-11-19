@@ -53,8 +53,10 @@ This rule enables automerge for all kind of development dependencies, namely for
 
 ```json
     {
+      "matchPackagePrefixes": [
+        "phpstan/"
+      ],
       "matchPackageNames": [
-        "phpstan/phpstan",
         "jangregor/phpstan-prophecy",
         "saschaegerer/phpstan-typo3",
         "rector/rector"

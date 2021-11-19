@@ -24,8 +24,8 @@
       "automerge": true
     },
     {
-      "matchPackagePatterns": [
-        "^phpstan/"
+      "matchPackagePrefixes": [
+        "phpstan/"
       ],
       "matchPackageNames": [
         "jangregor/phpstan-prophecy",
