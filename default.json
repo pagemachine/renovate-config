@@ -32,7 +32,8 @@
         "saschaegerer/phpstan-typo3",
         "rector/rector"
       ],
-      "groupName": "PHPStan"
+      "groupName": "PHPStan",
+      "separateMajorMinor": false
     },
     {
       "matchPackagePrefixes": [

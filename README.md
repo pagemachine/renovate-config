@@ -61,7 +61,8 @@ This rule enables automerge for all kind of development dependencies, namely for
         "saschaegerer/phpstan-typo3",
         "rector/rector"
       ],
-      "groupName": "PHPStan"
+      "groupName": "PHPStan",
+      "separateMajorMinor": false
     }
 ```
 
