@@ -30,7 +30,8 @@
       "matchPackageNames": [
         "jangregor/phpstan-prophecy",
         "saschaegerer/phpstan-typo3",
-        "rector/rector"
+        "rector/rector",
+        "slevomat/coding-standard"
       ],
       "groupName": "PHPStan",
       "separateMajorMinor": false
