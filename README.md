@@ -103,3 +103,56 @@ This rule groups all PHPStan-related packages into a single update. This avoids 
 
 This rule groups [all TYPO3 packages](https://github.com/orgs/TYPO3-CMS/repositories) into a single update. Technically all TYPO3 packages must be updated at once since all depend on each other with the same version. Also major TYPO3 updates (e.g. from v9 to v10) will not be suggested. These basically always need proper preparation and migration as well as other package updates.
 
+## TYPO3 Extension preset
+
+Usage in `renovate.json`:
+
+```json
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["local>pagemachine/renovate-config:typo3-cms-extension"]
+}
+```
+
+The `typo3-cms-extension.json`:
+
+```json
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["local>pagemachine/renovate-config"],
+  "packageRules": [
+    // See below
+  ]
+}
+```
+
+The various parts explained:
+
+- [`local>pagemachine/renovate-config`](#default-preset) is the default preset explained above.
+- [`packageRules`](https://docs.renovatebot.com/configuration-options/#packagerules):
+
+```json
+    {
+      "matchDepTypes": [
+        "require"
+      ],
+      "rangeStrategy": "widen"
+    }
+```
+
+This rule overrides the [`rangeStrategy`](https://docs.renovatebot.com/configuration-options/#rangestrategy) for Composer dependencies via [`require`](https://getcomposer.org/doc/04-schema.md#require). By default new major version updates of dependencies would lead to a replaced version constraint:
+
+```diff
+-"typo3/cms-core": "^10.4",
++"typo3/cms-core": "^11.5",
+```
+
+With `widen`, the new major version is added instead:
+
+
+```diff
+-"typo3/cms-core": "^10.4",
++"typo3/cms-core": "^10.4 || ^11.5",
+```
+
+This is a good practice for TYPO3 extensions to support at least 2 consecutive TYPO3 major versions for smooth upgrades.
