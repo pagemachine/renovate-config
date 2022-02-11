@@ -1,6 +1,21 @@
 # Pagemachine Renovate Config
 
-[Organization level presets](https://docs.renovatebot.com/config-presets/#organization-level-presets) configuration for Renovate:
+[Organization level presets](https://docs.renovatebot.com/config-presets/#organization-level-presets) configuration for Renovate.
+
+See the Renovate docs about [Configuration Options](https://docs.renovatebot.com/configuration-options/) and [Default Presets](https://docs.renovatebot.com/presets-default/) for all features and tweaks.
+
+## Default preset
+
+Usage in `renovate.json`:
+
+```json
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["local>pagemachine/renovate-config"]
+}
+```
+
+The `default.json`:
 
 ```json
 {
@@ -88,4 +103,3 @@ This rule groups all PHPStan-related packages into a single update. This avoids 
 
 This rule groups [all TYPO3 packages](https://github.com/orgs/TYPO3-CMS/repositories) into a single update. Technically all TYPO3 packages must be updated at once since all depend on each other with the same version. Also major TYPO3 updates (e.g. from v9 to v10) will not be suggested. These basically always need proper preparation and migration as well as other package updates.
 
-Finally see the Renovate docs about [Configuration Options](https://docs.renovatebot.com/configuration-options/) and [Default Presets](https://docs.renovatebot.com/presets-default/) for all features and tweaks.
