@@ -7,6 +7,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base",
+    ":disableDependencyDashboard",
     ":separatePatchReleases"
   ],
   "commitMessagePrefix": "[TASK] ",
