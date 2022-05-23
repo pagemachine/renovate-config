@@ -24,6 +24,11 @@
       "automerge": true
     },
     {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["thecodingmachine/php"],
+      "enabled": false
+    },
+    {
       "matchPackagePrefixes": [
         "phpstan/"
       ],
