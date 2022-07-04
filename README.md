@@ -95,6 +95,9 @@ This rule groups all PHPStan-related packages into a single update. This avoids 
         "typo3/cms-composer-installers"
       ],
       "groupName": "TYPO3 CMS",
+      "labels": [
+        "typo3"
+      ],
       "extends": [
         ":disableMajorUpdates"
       ]
