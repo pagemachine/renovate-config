@@ -29,6 +29,10 @@
       "enabled": false
     },
     {
+      "matchPackageNames": ["php"],
+      "enabled": false
+    },
+    {
       "matchPackagePrefixes": [
         "phpstan/"
       ],
