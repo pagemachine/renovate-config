@@ -68,6 +68,16 @@ The various parts explained:
 This rule enables automerge for all kind of development dependencies, namely for NPM/Yarn (`devDependencies`) and Composer (`require-dev`). This means that patch and minor updates of development packages will be merged automatically if possible.
 
 ```json
+
+    {
+      "matchPackageNames": ["php"],
+      "enabled": false
+    }
+```
+
+This rule disables all PHP update suggestions. Updating the PHP version or widening the range of supported PHP versions is almost always accompanied by further changes like Docker image updates and CI adjustments. Thus it currently does not make much sense to have Renovate suggest such updates.
+
+```json
     {
       "matchPackagePrefixes": [
         "phpstan/"
