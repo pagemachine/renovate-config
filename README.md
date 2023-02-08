@@ -70,6 +70,25 @@ This rule enables automerge for all kind of development dependencies, namely for
 ```json
 
     {
+      "matchDepTypes": [
+        "require"
+      ],
+      "matchPackageNames": [
+        // ...
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "automerge": true
+    }
+```
+
+This rule enables automerge for a selected list of reqular Composer dependencies.
+
+```json
+
+    {
       "matchPackageNames": ["php"],
       "enabled": false
     }
