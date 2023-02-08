@@ -38,7 +38,10 @@
     },
     {
       "matchDatasources": ["docker"],
-      "matchPackageNames": ["thecodingmachine/php"],
+      "matchPackageNames": [
+        "mysql",
+        "thecodingmachine/php"
+      ],
       "enabled": false
     },
     {
