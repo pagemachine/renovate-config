@@ -32,7 +32,8 @@
         "patch"
       ],
       "matchPackageNames": [
-        "cweagans/composer-patches"
+        "cweagans/composer-patches",
+        "helhum/typo3-console"
       ],
       "automerge": true
     },
