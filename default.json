@@ -17,10 +17,6 @@
         "devDependencies",
         "require-dev"
       ],
-      "matchUpdateTypes": [
-        "minor",
-        "patch"
-      ],
       "automerge": true
     },
     {

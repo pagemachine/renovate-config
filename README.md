@@ -57,15 +57,11 @@ The various parts explained:
         "devDependencies",
         "require-dev"
       ],
-      "matchUpdateTypes": [
-        "minor",
-        "patch"
-      ],
       "automerge": true
     }
 ```
 
-This rule enables automerge for all kind of development dependencies, namely for NPM/Yarn (`devDependencies`) and Composer (`require-dev`). This means that patch and minor updates of development packages will be merged automatically if possible.
+This rule enables automerge for all kind of development dependencies, namely for NPM/Yarn (`devDependencies`) and Composer (`require-dev`).
 
 ```json
 
