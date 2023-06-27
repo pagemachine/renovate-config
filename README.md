@@ -83,6 +83,17 @@ This rule enables automerge for all kind of development dependencies, namely for
 This rule enables automerge for a selected list of reqular Composer dependencies.
 
 ```json
+    {
+      "matchPackageNames": [
+        // ...
+      ],
+      "minimumReleaseAge": "1 day"
+    },
+```
+
+This rule enforces a delay of 1 day for update processing like automerge for a selected list of packages.
+
+```json
 
     {
       "matchPackageNames": ["php"],
