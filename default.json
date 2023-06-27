@@ -34,6 +34,12 @@
       "automerge": true
     },
     {
+      "matchPackageNames": [
+        "deployer/deployer"
+      ],
+      "minimumReleaseAge": "1 day"
+    },
+    {
       "matchDatasources": ["docker"],
       "matchPackageNames": [
         "mysql",
