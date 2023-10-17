@@ -134,13 +134,20 @@ This rule groups all PHPStan-related packages into a single update. This avoids 
       "labels": [
         "typo3"
       ],
+      "prPriority": 5,
       "extends": [
         ":disableMajorUpdates"
       ]
     }
 ```
 
-This rule groups [all TYPO3 packages](https://github.com/orgs/TYPO3-CMS/repositories) into a single update. Technically all TYPO3 packages must be updated at once since all depend on each other with the same version. Also major TYPO3 updates (e.g. from v9 to v10) will not be suggested. These basically always need proper preparation and migration as well as other package updates.
+This rule groups [all TYPO3 packages](https://github.com/orgs/TYPO3-CMS/repositories) into a single update. Technically all TYPO3 packages must be updated at once since all depend on each other with the same version.
+
+A label is added to update PRs for easier identification across projects.
+
+The priority is raised over other updates to `5` (arbitrary, higher than the default `0`).
+
+Major TYPO3 updates (e.g. from v9 to v10) will not be suggested. These basically always need proper preparation and migration as well as other package updates.
 
 ## TYPO3 Extension preset
 
