@@ -60,7 +60,7 @@ The various parts explained:
         "templates/.+\\.ya?ml$"
       ],
       "versioningTemplate": "semver",
-      "datasourceTemplate": "gitlab-releases",
+      "datasourceTemplate": "gitlab-tags",
       "registryUrlTemplate": "https://{{{registryUrl}}}",
       "depTypeTemplate": "repository",
       "matchStrings": [
