@@ -9,6 +9,22 @@
   "commitMessageTopic": "{{depName}}",
   "commitMessageExtra": " ({{{displayFrom}}} => {{{displayTo}}})",
   "composerIgnorePlatformReqs": null,
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": [
+        "\\.gitlab-ci\\.ya?ml$",
+        "templates/.+\\.ya?ml$"
+      ],
+      "versioningTemplate": "semver",
+      "datasourceTemplate": "gitlab-releases",
+      "registryUrlTemplate": "https://{{{registryUrl}}}",
+      "depTypeTemplate": "repository",
+      "matchStrings": [
+          "component: (?<registryUrl>[^\\s\\/]+)\\/(?<depName>\\S+)\\/[^\\s\\/]+@(?<currentValue>\\S+)"
+      ]
+    }
+  ],
   "platformAutomerge": true,
   "rangeStrategy": "update-lockfile",
   "packageRules": [
