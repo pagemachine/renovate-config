@@ -226,3 +226,37 @@ With `widen`, the new major version is added instead:
 ```
 
 This is a good practice for TYPO3 extensions to support at least 2 consecutive TYPO3 major versions for smooth upgrades.
+
+## Maintenance presets
+
+Usage in `renovate.json`:
+
+```json
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "...",
+    "local>pagemachine/renovate-config//maintenance/..."
+  ]
+}
+```
+
+The following presets are available:
+
+- `local>pagemachine/renovate-config//maintenance/limited`
+- `local>pagemachine/renovate-config//maintenance/regular`
+
+The `limited.json` / `regular.json`:
+
+```json
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "addLabels": [
+        // See below
+    ]
+}
+```
+
+The various parts explained:
+
+- [`addLabels`](https://docs.renovatebot.com/configuration-options/#addlabels): adds labels to update PRs to hint at the maintenance conditions.

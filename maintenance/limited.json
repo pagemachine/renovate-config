@@ -1,0 +1,7 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "description": "Maintenance up to a time-based limit, additional work is billed separately.",
+    "addLabels": [
+        "maintenance:limited"
+    ]
+}
