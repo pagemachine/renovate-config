@@ -92,7 +92,7 @@ This rule enforces a delay of 1 day for update processing like automerge for a s
 ```json
 
     {
-      "matchPackageNames": ["php"],
+      "matchDepNames": ["php"],
       "enabled": false
     }
 ```
