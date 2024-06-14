@@ -46,7 +46,7 @@
       "enabled": false
     },
     {
-      "matchPackageNames": ["php"],
+      "matchDepNames": ["php"],
       "enabled": false
     },
     {
