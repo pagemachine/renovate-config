@@ -8,7 +8,6 @@
   "commitMessagePrefix": "[TASK] ",
   "commitMessageTopic": "{{depName}}",
   "commitMessageExtra": " ({{{displayFrom}}} => {{{displayTo}}})",
-  "composerIgnorePlatformReqs": null,
   "platformAutomerge": true,
   "rangeStrategy": "update-lockfile",
   "packageRules": [
