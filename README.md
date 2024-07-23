@@ -102,13 +102,10 @@ This rule disables all PHP update suggestions. Updating the PHP version or widen
 ```json
     {
       "matchPackagePrefixes": [
-        "phpstan/"
+        // ...
       ],
       "matchPackageNames": [
-        "jangregor/phpstan-prophecy",
-        "saschaegerer/phpstan-typo3",
-        "rector/rector",
-        "slevomat/coding-standard"
+        // ...
       ],
       "groupName": "PHPStan",
       "separateMajorMinor": false
