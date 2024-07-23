@@ -57,6 +57,7 @@
         "jangregor/phpstan-prophecy",
         "saschaegerer/phpstan-typo3",
         "rector/rector",
+        "ssch/typo3-rector",
         "slevomat/coding-standard"
       ],
       "groupName": "PHPStan",
