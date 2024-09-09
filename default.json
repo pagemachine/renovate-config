@@ -46,6 +46,16 @@
       "enabled": false
     },
     {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": [
+        "registry.gitlab.com/pagemachine/*/mysql"
+      ],
+      "matchUpdateTypes": [
+        "patch"
+      ],
+      "automerge": true
+    },
+    {
       "matchDepNames": ["php"],
       "enabled": false
     },
