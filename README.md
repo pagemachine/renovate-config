@@ -90,7 +90,18 @@ This rule enables automerge for a selected list of reqular Composer dependencies
 This rule enforces a delay of 1 day for update processing like automerge for a selected list of packages.
 
 ```json
+    {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": [
+        // ...
+      ],
+      "enabled": false
+    },
+```
 
+This rule disables update suggestions for a selected list of Docker images. Usually these updates could not be completed without further changes.
+
+```json
     {
       "matchDepNames": ["php"],
       "enabled": false
