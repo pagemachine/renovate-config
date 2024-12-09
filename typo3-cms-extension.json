@@ -7,6 +7,12 @@
         "require"
       ],
       "rangeStrategy": "widen"
+    },
+    {
+      "matchDepNames": [
+        "typo3/coding-standards"
+      ],
+      "rangeStrategy": "widen"
     }
   ]
 }

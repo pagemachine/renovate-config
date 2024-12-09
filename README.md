@@ -221,3 +221,14 @@ With `widen`, the new major version is added instead:
 ```
 
 This is a good practice for TYPO3 extensions to support at least 2 consecutive TYPO3 major versions for smooth upgrades.
+
+```json
+    {
+      "matchDepNames": [
+        "typo3/coding-standards"
+      ],
+      "rangeStrategy": "widen"
+    }
+```
+
+This rule overrides the [`rangeStrategy`](https://docs.renovatebot.com/configuration-options/#rangestrategy) for the Composer dependency `typo3/coding-standards`.
