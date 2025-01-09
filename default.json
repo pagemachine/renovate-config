@@ -48,6 +48,7 @@
     {
       "matchDatasources": ["docker"],
       "matchPackageNames": [
+        "registry.gitlab.com/pagemachine/*/mariadb",
         "registry.gitlab.com/pagemachine/*/mysql"
       ],
       "matchUpdateTypes": [
