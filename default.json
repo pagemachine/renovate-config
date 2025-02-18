@@ -48,6 +48,7 @@
     {
       "matchDatasources": ["docker"],
       "matchPackageNames": [
+        "axllent/mailpit",
         "registry.gitlab.com/pagemachine/*/mariadb",
         "registry.gitlab.com/pagemachine/*/mysql"
       ],
