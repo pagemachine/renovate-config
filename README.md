@@ -22,6 +22,7 @@ The `default.json`:
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended",
+    ":separateMultipleMajorReleases",
     ":separatePatchReleases"
   ],
   "commitMessagePrefix": "[TASK] ",
@@ -38,6 +39,7 @@ The `default.json`:
 The various parts explained:
 
 - [`config:recommended`](https://docs.renovatebot.com/presets-config/#configrecommended) is the default configuration for all languages.
+- [`:separateMultipleMajorReleases`](https://docs.renovatebot.com/presets-default/#separatemultiplemajorreleases) separates multiple major (X.y.z) updates. Skipping over major releases usually requires more work than updating in sequence.
 - [`:separatePatchReleases`](https://docs.renovatebot.com/presets-default/#separatepatchreleases) separates minor (x.Y.z) and patch (x.y.Z) updates. Patch updates are usually safe to apply right away. Minor updates provide new features and should be reviewed more thoroughly.
 - [`commitMessagePrefix`](https://docs.renovatebot.com/configuration-options/#commitmessageprefix), [`commitMessageTopic`](https://docs.renovatebot.com/configuration-options/#commitmessagetopic), [`commitMessageExtra`](https://docs.renovatebot.com/configuration-options/#commitmessageextra) slightly reformat the Renovate commit messages:
 
