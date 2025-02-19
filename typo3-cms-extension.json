@@ -10,7 +10,8 @@
     },
     {
       "matchDepNames": [
-        "typo3/coding-standards"
+        "typo3/coding-standards",
+        "typo3/testing-framework"
       ],
       "rangeStrategy": "widen"
     }
