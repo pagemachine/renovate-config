@@ -227,10 +227,10 @@ This is a good practice for TYPO3 extensions to support at least 2 consecutive T
 ```json
     {
       "matchDepNames": [
-        "typo3/coding-standards"
+        // ...
       ],
       "rangeStrategy": "widen"
     }
 ```
 
-This rule overrides the [`rangeStrategy`](https://docs.renovatebot.com/configuration-options/#rangestrategy) for the Composer dependency `typo3/coding-standards`.
+This rule overrides the [`rangeStrategy`](https://docs.renovatebot.com/configuration-options/#rangestrategy) for selected Composer dependencies.
