@@ -6,9 +6,6 @@
       "matchDepTypes": [
         "require"
       ],
-      "rangeStrategy": "widen"
-    },
-    {
       "matchDepNames": [
         "phpunit/phpunit",
         "typo3/coding-standards",
