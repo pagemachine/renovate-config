@@ -200,14 +200,14 @@ The various parts explained:
 
 ```json
     {
-      "matchDepTypes": [
-        "require"
-      ],
+      // ...
       "rangeStrategy": "widen"
     }
 ```
 
-This rule overrides the [`rangeStrategy`](https://docs.renovatebot.com/configuration-options/#rangestrategy) for Composer dependencies via [`require`](https://getcomposer.org/doc/04-schema.md#require). By default new major version updates of dependencies would lead to a replaced version constraint:
+This rule overrides the [`rangeStrategy`](https://docs.renovatebot.com/configuration-options/#rangestrategy) for some selected Composer dependencies.
+
+By default new major version updates of dependencies would lead to a replaced version constraint:
 
 ```diff
 -"typo3/cms-core": "^10.4",
@@ -224,13 +224,4 @@ With `widen`, the new major version is added instead:
 
 This is a good practice for TYPO3 extensions to support at least 2 consecutive TYPO3 major versions for smooth upgrades.
 
-```json
-    {
-      "matchDepNames": [
-        // ...
-      ],
-      "rangeStrategy": "widen"
-    }
-```
-
-This rule overrides the [`rangeStrategy`](https://docs.renovatebot.com/configuration-options/#rangestrategy) for selected Composer dependencies.
+The same goes for a few other dependencies indirectly related to TYPO3, e.g. PHPStan.
