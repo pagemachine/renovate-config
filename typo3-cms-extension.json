@@ -6,6 +6,9 @@
       "matchDepTypes": [
         "require"
       ],
+      "rangeStrategy": "widen"
+    },
+    {
       "matchDepNames": [
         "jangregor/phpstan-prophecy",
         "phpstan/**",
