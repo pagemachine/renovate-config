@@ -205,7 +205,7 @@ The various parts explained:
     }
 ```
 
-This rule overrides the [`rangeStrategy`](https://docs.renovatebot.com/configuration-options/#rangestrategy) for some selected Composer dependencies.
+These rules override the [`rangeStrategy`](https://docs.renovatebot.com/configuration-options/#rangestrategy) for some selected Composer dependencies.
 
 By default new major version updates of dependencies would lead to a replaced version constraint:
 
