@@ -7,7 +7,12 @@
         "require"
       ],
       "matchDepNames": [
+        "jangregor/phpstan-prophecy",
+        "phpstan/**",
         "phpunit/phpunit",
+        "rector/rector",
+        "saschaegerer/phpstan-typo3",
+        "ssch/typo3-rector",
         "typo3/coding-standards",
         "typo3/testing-framework"
       ],
