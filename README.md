@@ -170,6 +170,20 @@ The priority is raised over other updates to `5` (arbitrary, higher than the def
 
 Major TYPO3 updates (e.g. from v9 to v10) will not be suggested. These basically always need proper preparation and migration as well as other package updates.
 
+```json
+
+    {
+      "matchPackageNames": [
+        "cobweb/external_import",
+        "cobweb/svconnector"
+      ],
+      "groupName": "External Import"
+    }
+```
+
+This rule groups the TYPO3 package [External Import](https://packagist.org/packages/cobweb/external_import)
+and related packages to enable major upgrades.
+
 ## TYPO3 Extension preset
 
 Usage in `renovate.json`:

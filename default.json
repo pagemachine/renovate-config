@@ -92,6 +92,13 @@
       "extends": [
         ":disableMajorUpdates"
       ]
+    },
+    {
+      "matchPackageNames": [
+        "cobweb/external_import",
+        "cobweb/svconnector"
+      ],
+      "groupName": "External Import"
     }
   ]
 }
