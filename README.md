@@ -177,7 +177,8 @@ Major TYPO3 updates (e.g. from v9 to v10) will not be suggested. These basically
         "cobweb/external_import",
         "cobweb/svconnector"
       ],
-      "groupName": "External Import"
+      "groupName": "External Import",
+      "separateMajorMinor": false
     }
 ```
 

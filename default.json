@@ -98,7 +98,8 @@
         "cobweb/external_import",
         "cobweb/svconnector"
       ],
-      "groupName": "External Import"
+      "groupName": "External Import",
+      "separateMultipleMajor": false
     }
   ]
 }
