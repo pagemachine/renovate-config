@@ -54,6 +54,7 @@
         "registry.gitlab.com/pagemachine/*/mysql"
       ],
       "matchUpdateTypes": [
+        "minor",
         "patch"
       ],
       "automerge": true

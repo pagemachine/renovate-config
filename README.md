@@ -110,13 +110,14 @@ This rule disables update suggestions for a selected list of Docker images. Usua
         // ...
       ],
       "matchUpdateTypes": [
+        "minor",
         "patch"
       ],
       "automerge": true
     },
 ```
 
-This rule enables automerge for patch updates of a selected list of Docker images.
+This rule enables automerge for minor/patch updates of a selected list of Docker images.
 
 ```json
     {
