@@ -186,6 +186,19 @@ Major TYPO3 updates (e.g. from v9 to v10) will not be suggested. These basically
 This rule groups the TYPO3 package [External Import](https://packagist.org/packages/cobweb/external_import)
 and related packages to enable major upgrades.
 
+```json
+    {
+      "matchPackageNames": [
+        "phpunit/phpunit",
+        "typo3/testing-framework"
+      ],
+      "groupName": "Testing Packages",
+      "separateMultipleMajor": false
+    }
+```
+
+This rule groups PHPUnit and the TYPO3 Testing Framework to enable major upgrades.
+
 ## TYPO3 Extension preset
 
 Usage in `renovate.json`:
