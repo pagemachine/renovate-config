@@ -101,6 +101,14 @@
       ],
       "groupName": "External Import",
       "separateMultipleMajor": false
+    },
+    {
+      "matchPackageNames": [
+        "phpunit/phpunit",
+        "typo3/testing-framework"
+      ],
+      "groupName": "Testing Packages",
+      "separateMultipleMajor": false
     }
   ]
 }
