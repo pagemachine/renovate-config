@@ -3,12 +3,6 @@
   "extends": ["local>pagemachine/renovate-config"],
   "packageRules": [
     {
-      "matchDepTypes": [
-        "require"
-      ],
-      "rangeStrategy": "widen"
-    },
-    {
       "matchDepNames": [
         "jangregor/phpstan-prophecy",
         "phpstan/**",
