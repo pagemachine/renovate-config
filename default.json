@@ -92,6 +92,10 @@
       "prPriority": 5,
       "extends": [
         ":disableMajorUpdates"
+      ],
+      "postUpdateOptions": [
+        "composerWithAll",
+        "composerNoMinimalChanges"
       ]
     },
     {
