@@ -94,7 +94,8 @@
         ":disableMajorUpdates"
       ],
       "postUpdateOptions": [
-        "composerWithAll"
+        "composerWithAll",
+        "composerNoMinimalChanges"
       ]
     },
     {
