@@ -112,7 +112,9 @@
         "typo3/testing-framework"
       ],
       "groupName": "Testing Packages",
-      "separateMultipleMajor": false
+      "extends": [
+        ":separateMultipleMajorReleases"
+      ]
     }
   ]
 }
