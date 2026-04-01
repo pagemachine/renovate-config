@@ -60,6 +60,13 @@
       "automerge": true
     },
     {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": [
+        "mcr.microsoft.com/playwright"
+      ],
+      "sourceUrl": "https://github.com/microsoft/playwright"
+    },
+    {
       "matchDepNames": ["php"],
       "enabled": false
     },
