@@ -120,6 +120,21 @@ This rule disables update suggestions for a selected list of Docker images. Usua
 This rule enables automerge for minor/patch updates of a selected list of Docker images.
 
 ```json
+
+    {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": [
+        "mcr.microsoft.com/playwright"
+      ],
+      "sourceUrl": "https://github.com/microsoft/playwright"
+    },
+```
+
+This rule sets the [source URL](https://docs.renovatebot.com/configuration-options/#packagerulessourceurl)
+of the [Playwright Docker image](https://playwright.dev/docs/docker) for changelogs
+and [grouping](https://docs.renovatebot.com/presets-monorepo/#monorepoplaywright).
+
+```json
     {
       "matchDepNames": ["php"],
       "enabled": false
