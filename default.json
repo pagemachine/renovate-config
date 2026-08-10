@@ -3,7 +3,8 @@
   "extends": [
     "config:recommended",
     ":separateMultipleMajorReleases",
-    ":separatePatchReleases"
+    ":separatePatchReleases",
+    "schedule:nonOfficeHours"
   ],
   "commitMessagePrefix": "[TASK] ",
   "commitMessageTopic": "{{depName}}",
