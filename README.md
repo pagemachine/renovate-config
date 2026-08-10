@@ -41,6 +41,7 @@ The various parts explained:
 - [`config:recommended`](https://docs.renovatebot.com/presets-config/#configrecommended) is the default configuration for all languages.
 - [`:separateMultipleMajorReleases`](https://docs.renovatebot.com/presets-default/#separatemultiplemajorreleases) separates multiple major (X.y.z) updates. Skipping over major releases usually requires more work than updating in sequence.
 - [`:separatePatchReleases`](https://docs.renovatebot.com/presets-default/#separatepatchreleases) separates minor (x.Y.z) and patch (x.y.Z) updates. Patch updates are usually safe to apply right away. Minor updates provide new features and should be reviewed more thoroughly.
+- [`schedule:nonOfficeHours`](https://docs.renovatebot.com/presets-schedule/#schedulenonofficehours) limits Renovate updates to non-office hours to reduce noise and strain on CI.
 - [`commitMessagePrefix`](https://docs.renovatebot.com/configuration-options/#commitmessageprefix), [`commitMessageTopic`](https://docs.renovatebot.com/configuration-options/#commitmessagetopic), [`commitMessageExtra`](https://docs.renovatebot.com/configuration-options/#commitmessageextra) slightly reformat the Renovate commit messages:
 
       [TASK] Update <package> (<old-version> => <new-version>)
@@ -174,6 +175,13 @@ This rule groups all PHPStan-related packages into a single update. This avoids 
       "prPriority": 5,
       "extends": [
         ":disableMajorUpdates"
+      ],
+      "postUpdateOptions": [
+        "composerWithAll",
+        "composerNoMinimalChanges"
+      ],
+      "schedule": [
+        "at any time"
       ]
     }
 ```
@@ -185,6 +193,11 @@ A label is added to update PRs for easier identification across projects.
 The priority is raised over other updates to `5` (arbitrary, higher than the default `0`).
 
 Major TYPO3 updates (e.g. from v9 to v10) will not be suggested. These basically always need proper preparation and migration as well as other package updates.
+
+TYPO3 updates run `--with-all-dependencies` as suggested by the official documentation.
+Also `--minimal-changes` is skipped to ensure necessary updates are not locked.
+
+Updates will be suggested at any time regardless of the global `schedule`.
 
 ```json
 

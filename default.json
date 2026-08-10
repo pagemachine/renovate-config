@@ -3,7 +3,8 @@
   "extends": [
     "config:recommended",
     ":separateMultipleMajorReleases",
-    ":separatePatchReleases"
+    ":separatePatchReleases",
+    "schedule:nonOfficeHours"
   ],
   "commitMessagePrefix": "[TASK] ",
   "commitMessageTopic": "{{depName}}",
@@ -103,6 +104,9 @@
       "postUpdateOptions": [
         "composerWithAll",
         "composerNoMinimalChanges"
+      ],
+      "schedule": [
+        "at any time"
       ]
     },
     {
