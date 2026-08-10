@@ -179,6 +179,9 @@ This rule groups all PHPStan-related packages into a single update. This avoids 
       "postUpdateOptions": [
         "composerWithAll",
         "composerNoMinimalChanges"
+      ],
+      "schedule": [
+        "at any time"
       ]
     }
 ```
@@ -193,6 +196,8 @@ Major TYPO3 updates (e.g. from v9 to v10) will not be suggested. These basically
 
 TYPO3 updates run `--with-all-dependencies` as suggested by the official documentation.
 Also `--minimal-changes` is skipped to ensure necessary updates are not locked.
+
+Updates will be suggested at any time regardless of the global `schedule`.
 
 ```json
 

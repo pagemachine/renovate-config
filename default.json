@@ -104,6 +104,9 @@
       "postUpdateOptions": [
         "composerWithAll",
         "composerNoMinimalChanges"
+      ],
+      "schedule": [
+        "at any time"
       ]
     },
     {
