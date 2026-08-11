@@ -11,6 +11,7 @@
   "commitMessageExtra": " ({{{displayFrom}}} => {{{displayTo}}})",
   "platformAutomerge": true,
   "rangeStrategy": "update-lockfile",
+  "updateNotScheduled": false,
   "packageRules": [
     {
       "matchDepTypes": [
