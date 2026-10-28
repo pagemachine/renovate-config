@@ -28,6 +28,9 @@ The `default.json`:
   "commitMessagePrefix": "[TASK] ",
   "commitMessageTopic": "{{depName}}",
   "commitMessageExtra": " ({{{displayFrom}}} => {{{displayTo}}})",
+  "major": {
+    "dependencyDashboardApproval": true
+  },
   "platformAutomerge": true,
   "rangeStrategy": "update-lockfile",
   "updateNotScheduled": false,
@@ -47,6 +50,7 @@ The various parts explained:
 
       [TASK] Update <package> (<old-version> => <new-version>)
 
+- [`dependencyDashboardApproval`](https://docs.renovatebot.com/configuration-options/#dependencydashboardapproval) for `major` updates allows Renovate to list possible major updates in its Dependency Dashboard but defers branch/MR creation until approved. This avoids creating MR and pipelines which are very likely to fail due to breaking changes.
 - [`platformAutomerge`](https://docs.renovatebot.com/configuration-options/#platformautomerge) enables the platform-native auto-merge capabilities so that update PRs can be merged automatically without interaction.
 - [`rangeStrategy`](https://docs.renovatebot.com/configuration-options/#rangestrategy) prefers lockfile updates (e.g. `composer.lock`), otherwise updates version constraints (e.g. `^1.0` to `^2.0`)
 - [`packageRules`](https://docs.renovatebot.com/configuration-options/#packagerules):

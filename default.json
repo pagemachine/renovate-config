@@ -9,6 +9,9 @@
   "commitMessagePrefix": "[TASK] ",
   "commitMessageTopic": "{{depName}}",
   "commitMessageExtra": " ({{{displayFrom}}} => {{{displayTo}}})",
+  "major": {
+    "dependencyDashboardApproval": true
+  },
   "platformAutomerge": true,
   "rangeStrategy": "update-lockfile",
   "updateNotScheduled": false,
