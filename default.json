@@ -99,9 +99,6 @@
         "typo3"
       ],
       "prPriority": 5,
-      "extends": [
-        ":disableMajorUpdates"
-      ],
       "postUpdateOptions": [
         "composerWithAll",
         "composerNoMinimalChanges"
@@ -115,18 +112,14 @@
         "cobweb/external_import",
         "cobweb/svconnector"
       ],
-      "groupName": "External Import",
-      "separateMultipleMajor": false
+      "groupName": "External Import"
     },
     {
       "matchPackageNames": [
         "phpunit/phpunit",
         "typo3/testing-framework"
       ],
-      "groupName": "Testing Packages",
-      "extends": [
-        ":separateMultipleMajorReleases"
-      ]
+      "groupName": "Testing Packages"
     }
   ]
 }
