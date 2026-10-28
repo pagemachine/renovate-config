@@ -207,8 +207,7 @@ Updates will be suggested at any time regardless of the global `schedule`.
         "cobweb/external_import",
         "cobweb/svconnector"
       ],
-      "groupName": "External Import",
-      "separateMajorMinor": false
+      "groupName": "External Import"
     }
 ```
 
@@ -221,8 +220,7 @@ and related packages to enable major upgrades.
         "phpunit/phpunit",
         "typo3/testing-framework"
       ],
-      "groupName": "Testing Packages",
-      "separateMultipleMajor": false
+      "groupName": "Testing Packages"
     }
 ```
 
