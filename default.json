@@ -9,9 +9,6 @@
   "commitMessagePrefix": "[TASK] ",
   "commitMessageTopic": "{{depName}}",
   "commitMessageExtra": " ({{{displayFrom}}} => {{{displayTo}}})",
-  "major": {
-    "dependencyDashboardApproval": true
-  },
   "platformAutomerge": true,
   "rangeStrategy": "update-lockfile",
   "updateNotScheduled": false,
@@ -123,6 +120,12 @@
         "typo3/testing-framework"
       ],
       "groupName": "Testing Packages"
+    },
+    {
+      "matchUpdateTypes": ["major"],
+      "extends": [
+        ":dependencyDashboardApproval"
+      ]
     }
   ]
 }
