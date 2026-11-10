@@ -28,6 +28,11 @@ The `default.json`:
   "commitMessagePrefix": "[TASK] ",
   "commitMessageTopic": "{{depName}}",
   "commitMessageExtra": " ({{{displayFrom}}} => {{{displayTo}}})",
+  "docker-compose": {
+    "managerFilePatterns": [
+      "/docker-stack.*\\.yml/"
+    ]
+  },
   "platformAutomerge": true,
   "rangeStrategy": "update-lockfile",
   "updateNotScheduled": false,
@@ -47,6 +52,7 @@ The various parts explained:
 
       [TASK] Update <package> (<old-version> => <new-version>)
 
+- [`docker-compose`](https://docs.renovatebot.com/modules/manager/docker-compose/) [`managerFilePatterns`](https://docs.renovatebot.com/configuration-options/#managerfilepatterns) lets Renovate handle Docker stack files (Swarm) as Docker Compose files
 - [`platformAutomerge`](https://docs.renovatebot.com/configuration-options/#platformautomerge) enables the platform-native auto-merge capabilities so that update PRs can be merged automatically without interaction.
 - [`rangeStrategy`](https://docs.renovatebot.com/configuration-options/#rangestrategy) prefers lockfile updates (e.g. `composer.lock`), otherwise updates version constraints (e.g. `^1.0` to `^2.0`)
 - [`packageRules`](https://docs.renovatebot.com/configuration-options/#packagerules):
