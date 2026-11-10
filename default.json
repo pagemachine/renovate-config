@@ -9,6 +9,11 @@
   "commitMessagePrefix": "[TASK] ",
   "commitMessageTopic": "{{depName}}",
   "commitMessageExtra": " ({{{displayFrom}}} => {{{displayTo}}})",
+  "docker-compose": {
+    "managerFilePatterns": [
+      "/docker-stack.*\\.yml/"
+    ]
+  },
   "platformAutomerge": true,
   "rangeStrategy": "update-lockfile",
   "updateNotScheduled": false,
